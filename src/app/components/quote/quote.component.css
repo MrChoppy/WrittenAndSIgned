@@ -1,0 +1,91 @@
+/* Common CSS styles for both mobile and desktop */
+
+.text-center {
+    color: #080101;
+    text-shadow: 1px 1px 2px rgba(19, 19, 19, 0.493);
+    text-align: center;
+}
+
+.author {
+    font-family: 'Your Elegant Font', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-family: 'Your Elegant Font', 'Trebuchet MS';
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    line-height: 1.7;
+    margin-bottom: 10px;
+    white-space: normal;
+    /* Enable text wrapping */
+    overflow-wrap: break-word;
+    /* Break words that exceed container width */
+    word-wrap: break-word;
+    /* For older browsers */
+}
+
+
+.fade-hr {
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    height: 1px;
+    border: none;
+}
+
+.text-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-picker-container {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.color-input {
+    margin-top: 10px;
+    width: 40px;
+}
+
+/* CSS styles for mobile devices */
+@media screen and (max-width: 767px) {
+    .quote-container.device-mobile {
+        width: 90%;
+    }
+
+    .text-container.device-mobile {
+        padding: 10px;
+    }
+
+    .color-picker-btn.device-mobile {
+        top: 20px;
+        left: 20px;
+    }
+
+    .color-picker-container.device-mobile {
+        top: 20px;
+        left: 54px;
+    }
+}
+
+/* CSS styles for desktop devices */
+@media screen and (min-width: 768px) {
+    .quote-container {
+        width: 70%;
+    }
+}

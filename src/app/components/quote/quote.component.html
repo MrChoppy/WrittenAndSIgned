@@ -1,0 +1,25 @@
+<div class="quote-container device-mobile" *ngIf="!loading && quote">
+  <div class="quote-content d-flex justify-content-center align-items-center">
+    <div class="text-container">
+      <div class="text-center">
+        <h2 class="author" [style.color]="selectedColor">{{ quote.author }}</h2>
+        <hr class="fade-hr" />
+
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="quote" [style.color]="selectedColor">
+                {{ quote.quote }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="color-picker-container">
+  <!-- Add the hidden color input -->
+  <input type="color" [(ngModel)]="selectedColor" class="color-input" />
+</div>

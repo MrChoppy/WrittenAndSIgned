@@ -1,0 +1,74 @@
+.text-center {
+    color: #080101;
+    text-shadow: 1px 1px 2px rgba(19, 19, 19, 0.493);
+    text-align: center;
+}
+
+.fade-hr {
+    background-image: linear-gradient(to right, transparent, black, transparent);
+    height: 1px;
+    border: none;
+}
+
+.poet {
+    font-family: 'Your Elegant Font', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Your Elegant Font', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.line {
+    font-family: 'Your Elegant Font', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    line-height: 1.7;
+    margin-bottom: 10px;
+    white-space: normal;
+    /* Resetting white-space property */
+    overflow-wrap: normal;
+    /* For non-IE browsers */
+    word-wrap: normal;
+    /* For IE 5.5+ */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile .container {
+    width: 100%;
+}
+
+.color-picker-container {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.color-input {
+    margin-top: 10px;
+    width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .text-container {
+        width: 90%;
+        /* Adjust the width as needed */
+        max-width: 400px;
+        /* Adjust the max-width as needed */
+    }
+}

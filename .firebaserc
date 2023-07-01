@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "writtenandsigned-c92e6": {
+      "hosting": {
+        "WrittenAndSigned": [
+          "writtenandsigned-c92e6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "writtenandsigned-c92e6"
+  }
+}

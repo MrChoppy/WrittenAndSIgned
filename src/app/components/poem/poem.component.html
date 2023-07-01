@@ -1,0 +1,43 @@
+<div class="container" [class.mobile]="isMobile">
+  <div class="" *ngIf="!loading && poem">
+    <div class="d-flex justify-content-center align-items-center" *ngIf="poem">
+      <div class="text-container">
+        <div class="text-center">
+          <h2 class="poet" [style.color]="selectedColor">{{ poem.poet }}</h2>
+          <hr class="fade-hr" />
+          <h4 class="title" [style.color]="selectedColor">{{ poem.title }}</h4>
+          <hr class="fade-hr" />
+
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled">
+                <li
+                  *ngFor="let line of firstPageLines"
+                  class="line"
+                  [style.color]="selectedColor"
+                >
+                  {{ line }}
+                </li>
+              </ul>
+            </div>
+            <div class="col" *ngIf="secondPageLines.length">
+              <ul class="list-unstyled">
+                <li
+                  *ngFor="let line of secondPageLines"
+                  class="line"
+                  [style.color]="selectedColor"
+                >
+                  {{ line }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="color-picker-container">
+    <!-- Add the hidden color input -->
+    <input type="color" [(ngModel)]="selectedColor" class="color-input" />
+  </div>
+</div>
